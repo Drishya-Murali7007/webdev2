@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+ 
+.bg {
+    min-height: 100vh;
+    background-color:#9bbcff ;
+    padding: 25px;
+}
+ 
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+ 
+.container {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 20px;
+}
+ 
+.eventform,
+.events {
+    background: white;
+    border-radius: 10px;
+    padding: 15px; 
+}
+.eventform h2 {
+    margin-top: 0;
+    color: #4b5fd7;
+}
+
+.eventform h3,
+.events h3 {
+    margin-top: 0;
+    color: #4b5fd7;
+}
+ 
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+input,
+select,
+textarea {
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 13px;
+}
+
+textarea {
+    resize: none;
+    height: 60px;
+}
+ 
+#submit,
+.clearAll,
+.addsample {
+    background: #6c63ff;
+    color: white;
+    border: none;
+    padding: 7px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.event-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    position: relative;
+}
+ .events h2{
+     margin-top: 0;
+    color: #4b5fd7;
+ }
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+ 
+.card {
+    background: #eef1ff;
+    width: 170px;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative; ;
+}
+
+.card h4 {
+    margin: 0 0 5px;
+    font-size: 14px;
+}
+
+.card p {
+    font-size: 12px;
+    margin: 4px 0;
+}
+  
+ 
+.dlt {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    background: #cd0000;
+    color: white;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.domcontainer{
+  
+    grid-column: 1 / -1;    
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px; }
+
+.domcontainer h2
+{
+     margin-top: 0;
+    color: #4b5fd7;
+}
