@@ -9,7 +9,7 @@ body {
  
 .bg {
     min-height: 100vh;
-    background-color:#9bbcff ;
+     background: linear-gradient(to right, #8fb7ff, #8fd3c7);
     padding: 25px;
 }
  
