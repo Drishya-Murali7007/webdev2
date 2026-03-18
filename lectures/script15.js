@@ -24,16 +24,16 @@
 // //     });
 // // }
 
-// // async function order()
-// // {
-// //     const data =await orderFood();
-// //     console.log(data);
-// //     await prepareFood();
-// //     await deliverFood();
-     
-// // }
+async function order()
+{
+    const data =await orderFood();
+    console.log(data);
+    await prepareFood();
+    await deliverFood();
+}
 
-// // order();
+
+order();
 
 // // orderFood()
 // // .then((data) => {

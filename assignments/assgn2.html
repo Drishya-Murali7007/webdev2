@@ -4,20 +4,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script defer src="/assignments/assgn2.js"></script>
-    <link rel="stylesheet" href="/assignments/assgn.css">
+
+    <link rel="stylesheet" href="/assignments/assgn2.css">
  </head>
  <body>
-    <div class ="weatherForm">
-        <h4 > Search city :</h4>
-        <form id = "weatherForm">
-            
-            <input type="text" id="city" name="city">
-            <button type="submit">Search </button>
+    <h1>☀ Async Weather Tracker</h1>
+
+<div class="weatherForm">
+
+  <div class="top-section">
+ 
+    <div class="left-box">
+      <h4>Search City</h4>
+      <form id="weatherForm">
+        <input type="text" id="city" name="city">
+        <button type="submit">Search</button>
+      </form>
+
+      <h4>Search History</h4>
+      <div class="searchHistory"></div>
     </div>
-    <div class = "info">
-        </div>
-        <div class = "console"></div>
+ 
+    <div class="right-box">
+      <h4>Weather Info</h4>
+      <div class="info"></div>
     </div>
-    
+
+  </div>
+ 
+  <div class="console">
+    Console - Event Loop
+  </div>
+
+</div>
  </body>
  </html>

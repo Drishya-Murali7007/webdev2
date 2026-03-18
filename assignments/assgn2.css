@@ -1,0 +1,116 @@
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+ 
+body {
+  background: linear-gradient(180deg, #1f2a5a, #2c3a7a);
+  padding: 30px;
+}
+ 
+h1 {
+  text-align: center;
+  color: #bcd3ff;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+ 
+.weatherForm {
+  max-width: 900px;
+  margin: auto;
+}
+ 
+.top-section {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+ 
+.left-box,
+.right-box {
+  background: #f3f3f3;
+  padding: 15px;
+  border-radius: 10px;
+  flex: 1;
+}
+ 
+h4 {
+  margin-bottom: 8px;
+  color: #333;
+}
+ 
+#weatherForm {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+ 
+#city {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #cfd8dc;
+  border-radius: 5px;
+  outline: none;
+}
+ 
+button {
+  background: #f26b38;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #d95a2e;
+}
+ 
+.searchHistory button {
+  background: #f26b38;
+  color: white;
+  border-radius: 15px;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+ 
+.info p {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 10px;
+  margin: 5px 0;
+  background: #e9ecef;   
+  border-radius: 5px;
+  font-size: 14px;
+}
+  
+.console {
+  background: #f3f3f3;
+  padding: 12px;
+  border-radius: 10px;
+}
+ 
+.console::before {
+  content: "";
+  display: block;
+}
+ 
+.console {
+  position: relative;
+}
+
+.console-inner {
+  background: #0f1b3d;
+  color: #cdd6f4;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  margin-top: 8px;
+  min-height: 70px;
+}
