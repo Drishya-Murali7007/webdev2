@@ -30,8 +30,9 @@ export default class Menu extends Component {
   render() {
     return (
         <>
-      <div>menu</div>
+      <div>Menu</div>
     <ul >
+      <h1>Menu</h1>
         <li>Home</li>
         <li>About</li>
         <li>Contact</li>
