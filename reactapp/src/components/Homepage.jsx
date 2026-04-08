@@ -2,7 +2,7 @@ import React from 'react'
 
 function Homepage() {
  const loggedin=true ;
-//  if (loggedin)
+//  if (loggedin)// if else statement
 //  {
 //     return (
 //         <button>Logout</button>
@@ -13,7 +13,7 @@ function Homepage() {
 //         <button>Login</button>
 //     )
 // }
-return loggedin ? <button>Logout</button> : <button>Login</button>
+return loggedin ? <button>Logout</button> : <button>Login</button>//ternary 
 }
 
 
