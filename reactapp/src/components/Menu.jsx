@@ -1,6 +1,6 @@
 import React ,{Component}from 'react'
 // import { add as addition } from './utility'
-import '../css/Menu.css'
+import Ishtyle from'../css/Menu.module.css'
 // function Menu() {
 //     console.log(addition(3,4))
 //   return (
@@ -67,7 +67,7 @@ class Menu extends Component {
                     <li>World</li>
                 </ul>
                 <h2>{this.state.count}</h2>
-                <button className="btn" onClick={this.handleIncrement}>Increment</button>
+                <button className={Ishtyle.btn} onClick={this.handleIncrement}>Increment</button>
             </div>
         )
     }
