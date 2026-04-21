@@ -29,24 +29,24 @@ class Menu extends Component {
 
     }
 
-    componentDidMount(){
-        console.log("Component Mounted")
+    // componentDidMount(){
+    //     console.log("Component Mounted")
         
 
         // data to be retreived from backend
-    }
+    // }
 
-    shouldComponentUpdate(nextProps, nextState){
-        if(nextState.count===1){
-            return false
-        }
-        console.log("Should componenet update")
-        return true
-    }
+    // shouldComponentUpdate(nextProps, nextState){
+    //     if(nextState.count===1){
+    //         return false
+    //     }
+    //     console.log("Should componenet update")
+    //     return true
+    // }
 
-    componentDidUpdate(){
-        console.log("Component  didUpdate")
-    }
+    // componentDidUpdate(){
+    //     console.log("Component  didUpdate")
+    // }
 
     handleIncrement=()=>{
         this.setState({count:this.state.count+1})
