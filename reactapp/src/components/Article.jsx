@@ -1,4 +1,4 @@
-import React,{useState, useEffect ,useRef} from 'react'
+import React,{useState, useEffect, useRef} from 'react'
 import ArtStyle from "../css/Article.module.css"
 // import styled from "styled-components"
 import styled from "@emotion/styled"
@@ -10,8 +10,10 @@ function Article(props) {
     const[count,setCount]=useState(0)
     const[age,setAge]=useState(0)
     const[name,setName]=useState("Alex")
-    const [loading,setLoading]=useState(false)
-const myRef=useRef(null)
+    const [loading, setLoading]=useState(false)
+
+    const myRef=useRef(null)
+
     useEffect(()=>{
       console.log("Component Mounted")
       return ()=>{
@@ -19,7 +21,7 @@ const myRef=useRef(null)
       }
     },[ name])
 
-    useState(()=>{
+    useEffect(()=>{
       // const fetchData=async()=>{
       //   try{
       //     const response=await fetch("https://dummyjson.com/products/222",{
@@ -34,19 +36,24 @@ const myRef=useRef(null)
 
       const fetchData=async()=>{
         try{
+          setLoading(true)
           const response=await axios.get("https://dummyjson.com/products")
           console.log(response.data)
+          setLoading(false)
         }catch(error){
           console.log(error)
         }
       }
 
+
       fetchData()
     },[])
-      
-    const handleRef =()=>{
+
+    
+    const handleRef=()=>{
       myRef.current.focus()
-      console.log
+      console.log(myRef.current.value)
+    }
 
 
     const handleIncrement=()=>{
@@ -56,10 +63,9 @@ const myRef=useRef(null)
   return (
     <div>
       <h2>Article</h2>
-      
-      {loading ? <h2>Loading...</h2> : ""}
-      <input ref={myRef} type="text" placeholder="Enter your name"
-      <button onClick ={handleRef} >use Ref </button>
+      {loading?<h2>Loading....</h2>:""}
+      <input type='text' ref={myRef} placeholder='Enter Your Name'/>
+      <button onClick={handleRef}>UseRef</button>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque maiores nemo obcaecati a quam nihil nobis enim quod cupiditate, ipsam sunt laborum vel numquam, sint accusantium. Vitae aliquam esse culpa.</p>
       <h3 style={{backgroundColor:"red"}}>{props.data}</h3>
       <h2>{count}</h2>
@@ -74,7 +80,7 @@ const myRef=useRef(null)
     </div>
   )
 }
- 
+
 export default Article
 
 
